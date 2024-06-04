@@ -1,0 +1,288 @@
+@import url('./base.css');
+/*-------------------------------*/
+/*Start header*/
+.header {
+    background-color: #fff;
+    position: sticky ;
+    top: 0%;
+    box-shadow: 0 0 4px rgb(0, 0, 0);
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+
+}
+.header .container .links{ 
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+.header .container .links  img .logo{
+    width: 45px;
+
+}
+.header .container .links ul {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.header .container .links ul li{
+    padding: 7px 13px;
+    border-radius: 8px;
+    
+}
+.header .container .links ul li.active{
+    background-color: #f2f2f2;
+}
+.header .container .auth{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+.header .container .auth a{
+    font-size: 14px;
+
+}
+.header .container .auth a.Login{
+    padding: 12px 24px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: var(--mainColor) ;
+
+}
+
+.header .container .menu {
+    border: none;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: transparent;
+    
+}
+.header .container .menu:hover{
+    background-color: #f2f2f2;
+}
+
+
+.header .container .menu i{
+    font-size: 18px;
+}
+
+
+/*End header*/
+/*Start Benefits*/
+.benefits{
+    margin-block: 30px;
+   /* padding-inline: 150px;*/
+    
+    
+}
+.benefits > .title h1 {
+    
+    margin-bottom: 10px;
+
+}
+.benefits > .title .title-info {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   margin-bottom: 60px;
+}
+.benefits > .title .title-info p{
+    flex: 4;
+    
+}
+.benefits > .title .title-info .btn{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.benefits > .title .title-info .btn button {
+    border: 1px solid #F1F1F3;
+    background-color: #FCFCFD;
+}
+.benefits .benefits-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.benefits .benefits-cards .benefits-list {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    width: calc( (100% - 40px) / 3);
+    aspect-ratio: 1 / 1;
+    padding: 25px 16px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    
+}
+.benefits .benefits-cards .benefits-list h1{
+    text-align: right;
+    font-size: 40px;
+}
+.benefits .benefits-cards .benefits-list p.title {
+    font-weight: bold;
+}
+.benefits .benefits-cards .benefits-list p.title-1 {
+    color: #777;
+    font-size: 10px;
+}
+.benefits .benefits-cards .benefits-list .action  {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.benefits .benefits-cards .benefits-list .action button  {
+    background-color:#f2f2f2 ;
+    border-radius: 4px;
+    padding: 13px;
+    
+
+}
+.benefits .benefits-cards .benefits-list .action button i {
+    
+    color: var(--mainColor);
+    transform: rotate(-45deg);
+    font-size: 12px;
+
+}
+
+
+/*End Benefits*/
+/*Start Our Pricing*/
+.Our-Pricing > .title h1 {
+    
+    margin-bottom: 10px;
+
+}
+.Our-Pricing > .title .title-info {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   
+}
+.Our-Pricing > .title .title-info p{
+    padding: 160x;
+    
+}
+.Our-Pricing > .title .title-info .btn{
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 7px;
+    
+}
+.Our-Pricing > .title .title-info .btn button {
+
+    border: 1px solid #F1F1F3;
+    background-color: #FCFCFD;
+}
+.Our-Pricing > .title .title-info .btn button.active {
+    background-color: var(--mainColor);
+    color: #fff;
+}
+
+.Our-Pricing .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 20px ;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 12px;
+
+}
+.Our-Pricing .wrapper .card{
+    width: calc((100% - 40px ) / 2);
+   /*flex: 1;*/
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   background-color: var( --background-color) ;
+   border-radius: 12px;
+   
+
+}
+.Our-Pricing .wrapper .card .type {
+    background-color: #FFEACC;
+    padding: 8px ;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center
+}
+.Our-Pricing .wrapper .card .price{
+    text-align: center;
+}
+.Our-Pricing .wrapper .card .price span{
+    font-size: 10px;
+    
+}
+
+.Our-Pricing .wrapper .card .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.Our-Pricing .wrapper .card .description ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.Our-Pricing .wrapper .card .description ul li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #eee;
+    padding: 6px;
+    border-radius: 8px;
+    
+}
+.Our-Pricing .wrapper .card .description ul li p {
+    color: #4C4C4D;
+}
+.Our-Pricing .wrapper .card .description ul li i{
+    padding: 4px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    color:  #4C4C4D;
+}
+.Our-Pricing .wrapper .card .description ul li i.active{
+    background-color: #FFEACC;
+    font-size: 13px;
+    color: black;
+}
+.Our-Pricing .wrapper .card .description button {
+    background-color: var(--mainColor);
+    color: #fff;
+    width: 100%;
+    border-radius: 0;
+    padding: 20px 0;
+    font-size: 18px;
+
+}
+/*End Our Pricing*/

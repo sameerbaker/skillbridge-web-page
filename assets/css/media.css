@@ -1,0 +1,72 @@
+/* start media Query phone*/
+@media (max-width: 768px){
+    .container {
+        width: 100%;
+        padding-inline: 10px;
+        
+        
+    }
+
+    .header .container .links ul li  {
+        display:none;
+    }
+    
+
+}
+
+@media (min-width: 769px){
+    .header .container .menu i {
+        display: none;
+    }
+}
+
+@media ( max-width :450px ) {
+
+    .benefits .benefits-cards .benefits-list {
+        
+        width: 100%
+    }
+    
+}
+@media (max-width :768px){
+    .Our-Pricing .wrapper .card{
+        
+        width: 100%;
+    }
+}
+@media (max-width :768px){
+    .Our-Pricing > .title .title-info{
+        flex-direction: column;
+    }
+    .Our-Pricing > .title .title-info p{
+        padding: 0;
+        text-align: center;
+    }
+    .Our-Pricing > .title h1 {
+        text-align: center;
+    }
+}
+/*End media Query phone*/
+/*Start media Query Labtop*/
+@media  (max-width : 1024px){
+    .header .container .links ul li{
+        font-size: 14px;
+    }
+
+    
+
+}
+
+@media (max-width : 1024px) {
+    .benefits .benefits-cards .benefits-list {
+        width: calc((100% - 40px ) / 2);
+    }
+    
+}
+@media (max-width : 1024px){
+    .Our-Pricing .wrapper{
+        font-size: 13px;
+    }
+}
+
+/*End media Query Labtop*/
